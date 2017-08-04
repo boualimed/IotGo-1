@@ -25,7 +25,6 @@ func GC(sleep int) {
 		runtime.ReadMemStats(&m)
 		fmt.Printf("%d,%d,%d,%d\n", m.HeapSys, m.HeapAlloc,
 			m.HeapIdle, m.HeapReleased)
-
 	}
 
 }

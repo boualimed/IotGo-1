@@ -46,11 +46,3 @@ func CorrectSleepOneSecond2(t1 time.Time) {
 
 	time.Sleep(time.Duration(1e9-(tnow2%1e9)) * time.Nanosecond)
 }
-
-func GetMailBoxAddress(mailboxnum int, userid int) (x int, y int) {
-	x = userid % mailboxnum
-
-	y = userid / mailboxnum
-	return x, y
-
-}
